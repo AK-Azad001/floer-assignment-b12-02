@@ -20,14 +20,14 @@
 .header{
   max-width: 1140px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  
   margin-top:30px ;
 }
 /* navbar styles */
 .nav{
   display: flex;
   justify-content: space-between;
-  
+  background-color: #FFFFFF;
   
 }
 .navbar-links{
@@ -68,10 +68,65 @@
   color: black;
 }
 
+/* banner styles */
+.banner{
+  max-width: 1140px;
+  min-height: 461px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  margin-top:120px ;
+  gap: 0;
 
+}
+.banner-content{
+  width: 50%;
+  min-height:300px ;
+  
+}
+.banner-content h1{
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
 
+}
+.banner-content span{
+  color: #E95A08;
+}
+.banner-content p{
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-top: 0.8rem;
+}
+.banner-image{
+  width: 50%;
+}
+/* plants-section styles */
 
-
+.plants-section{
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 120px;
+  background-color: #FFFFFF;
+}
+.plants-description{
+  text-align: center;
+}
+.plants-description h1{
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.plants-description span{
+  color: #E95A08;
+}
+.plants-description p{
+  margin: 0;
+  margin-top:1rem ;
+  font-size: 1.4rem;
+  color:rgba(0, 0, 0, 0.5) ;
+}
 
 
 /* responsibe styles */
@@ -80,4 +135,29 @@
     .mobile-hide{
   display: none;
 }
+
+  .banner{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    margin-top: 30px;
   }
+  .banner-image{
+  width: 100%;
+  margin: 0 auto;
+}
+  .mobile-image{
+    width: 90%;
+  
+  }
+
+  .banner-content{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: left;
+  }
+  .banner-content h1{
+    font-size: 2rem;
+  }
+
+}
