@@ -25,6 +25,11 @@
   background-color: #E95A08;
   margin: 0;
 }
+.span{
+  color: #E95A08;
+}
+
+
 /* header styles */
 .header{
   max-width: 1140px;
@@ -99,9 +104,7 @@
   margin: 0;
 
 }
-.banner-content span{
-  color: #E95A08;
-}
+
 .banner-content p{
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.5);
@@ -127,9 +130,7 @@
   font-weight: 700;
   margin: 0;
 }
-.plants-description span{
-  color: #E95A08;
-}
+
 .plants-description p{
   margin: 0;
   margin-top:1rem ;
@@ -181,9 +182,17 @@
 
 }
 
+.corner-badge{
+  width:286px ;
+  height:286px ;
+  position: absolute;
+  top: -140px;
+  right: -100px;
+}
 .plants-lover-image{
   background: linear-gradient to-bottom(from-rgba(103, 171, 234, 0.4) to-rgba(233, 90, 8, 1)); 
-  height: 600px;
+  max-height: 600px;
+  position: relative;
 }
 .plants-lover-description{
   max-width: 540px;
@@ -197,12 +206,125 @@
   color: #000000;
   margin: 0;
 }
+
 .plants-lover-description p{
   margin-top: 10px;
   font-size: 1.4rem;
   font-weight: 400;
   color:rgba(0, 0, 0, 0.5) ;
 }
+/* latest-deal section styles */
+.latest-deal{
+  max-width: 1440px;
+ 
+  margin-top: 130px;
+}
+.latest-deal-description{
+   text-align: center;
+}
+.latest-deal-description h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+.latest-deal-description p{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-top: 1rem;
+}
+.latest-deal-cards{
+  max-width: 1140px;
+  min-height: 423px;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.card-1{
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 367px;
+  height: 200px;
+  border-radius: 0.9rem;
+  text-align: center;
+  border: 1px solid #C8C8C8;
+  margin: 0;
+}
+.card-2{
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../assets/deal-ana.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+
+  width: 367px;
+  height: 198px;
+  border-radius: 0.9rem;
+  text-align: center;
+   border: 1px solid #C8C8C8;
+   margin: 0;
+   margin-top: 25px;
+}
+
+.card-1-des{
+  width: 270px;
+  height: 90px;
+  margin: 65px 48px 50px;
+}
+.card-1-des h1{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+.card-1-des  a{
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.card-sec-2{
+  background-color:rgba(0, 0, 0, 0.4) ;
+  background-image: url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  width: 753px;
+  max-height: 423px;
+  border-radius: 1.4rem;
+  border: 1px solid #C8C8C8;
+  
+}
+.card-sec-2-des{
+  max-width: 600px;
+  max-height: 120px;
+  margin:151px 76px ;
+  text-align: center;
+}
+.card-sec-2-des h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+.card-sec-2-des a{
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 20px;
+}
+
+
+
+
 
 /* join-section styles */
 .join-section{
@@ -320,6 +442,9 @@
   .banner-content h1{
     font-size: 2rem;
   }
+  .plants-description{
+    margin-top: 60px;
+  }
  .plants-cards{
   width:calc(100%-20px);
   margin-top: 20px;
@@ -341,10 +466,12 @@
   flex-direction: column;
   margin: 0 auto;
   margin-top: 40px;
+  gap: 0px;
 
 }
 .plants-lover-image{
   width: 100%;
+  margin-bottom: 0px;
 }
 .lover-image{
   width: 100%;
@@ -352,11 +479,41 @@
 .plants-lover-description{
   width: 100%;
   text-align: left;
+  margin-top: 0px;
+}
+.latest-deal-cards{
+  flex-direction: column;
+  width: 95%;
+  margin: 0 30px;
+  margin-top: 50px;
+}
+.card-1{
+  width: 90%;
+}
+.card-2{
+  width: 90%;
+}
+.card-sec-2{
+  width: 90%;
+  height:210px ;
+}
+.card-sec-2-des {
+  height: 100px;
+  margin: 50px auto;
+}
+.card-sec-2-des h1{
+  font-size:1.3rem ;
+}
+.card-sec-2-des a{
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 .join-section{
   width: 100%;
   background: cover;
+  background-size: cover;
   background-color: rgba(7, 51, 79, 0.4);
+  margin-top:40px ;
 }
 .join-bunch{
   width: 90%;
@@ -380,4 +537,5 @@
 .footer-container-links-2 ul{
   padding: 0;
 }
+
 }
