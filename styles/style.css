@@ -16,6 +16,14 @@
     margin: 0 auto;
     background-color:#F5F8FF ;
 }
+/* shared styles */
+.btn-primary{
+  padding: 22px 50px;
+  width: 270px;
+  border:none ;
+  color: #FFFFFF;
+  background-color: #E95A08;
+}
 /* header styles */
 .header{
   max-width: 1140px;
@@ -127,6 +135,45 @@
   font-size: 1.4rem;
   color:rgba(0, 0, 0, 0.5) ;
 }
+/* card styles */
+.plants-cards{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+
+
+.card{
+  max-width: 270px;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.card h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #111111;
+  margin: 0;
+  margin-top: 30px;
+}
+.card h4{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+
 
 
 /* responsibe styles */
@@ -144,9 +191,10 @@
   .banner-image{
   width: 100%;
   margin: 0 auto;
+  
 }
   .mobile-image{
-    width: 90%;
+    width: 100%;
   
   }
 
@@ -159,5 +207,22 @@
   .banner-content h1{
     font-size: 2rem;
   }
+ .plants-cards{
+  width:calc(100%-20px);
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+}
+ .card{
+  width:100%;
+}
+ .btn-primary{
+  width:100%;
+  padding:22px 30px;
+ }
+ .card img{
+  width:100%;
+ }
 
 }
